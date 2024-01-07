@@ -1,0 +1,5 @@
+Main-black  #272727
+Main-grey  #585858
+Main-blue  #5184FE
+
+rectangle-grey  #F8F8F8
