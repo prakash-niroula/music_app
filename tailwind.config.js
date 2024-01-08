@@ -26,7 +26,8 @@ module.exports = {
         'interBlack': ['Inter_900Black'],
       },
       letterSpacing: {
-        'def': -2.5,
+        '4xl': -0.8,
+        'base': -0.3,
       }
     }
   }
