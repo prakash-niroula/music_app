@@ -8,9 +8,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontSize: {
+        'title': '40px',
+        'base': '16px'
+      },
       colors: {
         'main-black': '#272727',
         'main-grey': '#585858',
+        'secondary-grey': '#ABABAB',
+        'tertiary-grey': '#EBEBEB',
         'main-blue': '#5184FE',
         'rectangle-grey': '#F8F8F8',
       },
@@ -26,7 +32,7 @@ module.exports = {
         'interBlack': ['Inter_900Black'],
       },
       letterSpacing: {
-        '4xl': -0.8,
+        'title': -0.8,
         'base': -0.3,
       }
     }
