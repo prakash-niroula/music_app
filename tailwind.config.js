@@ -12,6 +12,9 @@ module.exports = {
         'base': '10px',
         'small': '8px'
       },
+      height: {
+        'rect': '50px'
+      },
       fontSize: {
         'title': '40px',
         'base': '16px'

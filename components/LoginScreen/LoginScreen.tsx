@@ -9,14 +9,14 @@ export const LoginScreen: FC = () => {
     <View className="flex items-center w-full">
       <Text className="font-interBold text-title text-main-black tracking-title w-full pl-5">Get Started.</Text>
       <View className="flex space-y-base mt-6 w-full px-5">
-        <TouchableHighlight className="bg-rectangle-grey w-full h-12 flex justify-center rounded items-center">
+        <TouchableOpacity className="bg-rectangle-grey w-full h-rect flex justify-center rounded items-center">
           <View className="flex flex-row space-x-2 items-center">
             {/* Official spotify color ;D */}
             <SpotifySvg width={20} height={20} fill={'#1ED760'} />
             <Text className="font-interMedium text-main-grey tracking-base text-base">Connect with Spotify</Text>
           </View>
-        </TouchableHighlight>
-        <TouchableOpacity className="bg-rectangle-grey w-full px-3 h-12 flex justify-center rounded items-center">
+        </TouchableOpacity>
+        <TouchableOpacity className="bg-rectangle-grey w-full px-3 h-rect flex justify-center rounded items-center">
           <View className="flex flex-row space-x-2 items-center">
             <YoutubeSvg width={20} height={20} fill={'red'} />
             <Text className="font-interMedium text-main-grey tracking-base text-base">Connect with Youtube</Text>
