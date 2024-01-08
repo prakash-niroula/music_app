@@ -32,7 +32,7 @@ export const LoginScreen: FC = () => {
           <View className="h-[1px] flex-1 bg-tertiary-grey font-interMedium mt-[12px]"></View>
         </View>
         <TouchableOpacity className="bg-main-blue w-full px-3 h-12 flex justify-center rounded items-center mt-0">
-          <Text className="font-interMedium text-white tracking-base text-base">Connect as Guest</Text>
+          <Text className="font-interMedium text-white tracking-base text-base">Continue as Guest</Text>
         </TouchableOpacity>
       </View>
     </View>
