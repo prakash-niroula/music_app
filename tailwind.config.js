@@ -8,6 +8,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      spacing: {
+        'base': '10px',
+        'small': '8px'
+      },
       fontSize: {
         'title': '40px',
         'base': '16px'
