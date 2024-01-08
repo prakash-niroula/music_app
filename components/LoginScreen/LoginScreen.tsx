@@ -1,12 +1,12 @@
 import { FC } from "react";
-import { TouchableHighlight, TouchableOpacity, View, Text } from "react-native";
+import { TouchableOpacity, View, Text } from "react-native";
 
 import SpotifySvg from '@/assets/login/svgs/spotify.svg';
 import YoutubeSvg from '@/assets/login/svgs/youtube.svg';
 
 export const LoginScreen: FC = () => {
   return (
-    <View className="flex items-center w-full">
+    <View className="flex items-center w-full pt-[15%]">
       <Text className="font-interBold text-title text-main-black tracking-title w-full pl-5">Get Started.</Text>
       <View className="flex space-y-base mt-6 w-full px-5">
         <TouchableOpacity className="bg-rectangle-grey w-full h-rect flex justify-center rounded items-center">
