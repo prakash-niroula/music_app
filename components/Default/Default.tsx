@@ -10,7 +10,7 @@ const myStyle = StyleSheet.create({
 
 export const Default: FC = () => {
   return (
-    <View className="flex justify-center w-full h-full">
+    <View className="flex justify-end w-full h-full">
       <LoginScreen />
     </View>
   );
