@@ -6,34 +6,30 @@ import YoutubeSvg from '@/assets/login/svgs/youtube.svg';
 
 export const LoginScreen: FC = () => {
   return (
-    <View className="flex justify-center w-full h-[75%]">
-      <Text className="font-interBold text-title text-main-black tracking-title w-full pl-5">Get Started.</Text>
-      <View className="flex mt-6 w-full px-5">
-        <TouchableOpacity className="mb-base bg-rectangle-grey w-full h-[17%] flex justify-center rounded items-center">
-          <View className="flex flex-row space-x-2 items-center">
-            {/* Official spotify color ;D */}
-            <SpotifySvg width={25} height={25} fill={'#1ED760'} />
-            <Text className="font-interMedium text-main-grey tracking-base text-base">Connect with Spotify</Text>
-          </View>
-        </TouchableOpacity>
-        <TouchableOpacity className="bg-rectangle-grey w-full h-[17%] px-3 flex justify-center rounded items-center">
-          <View className="flex flex-row space-x-2 items-center">
-            <YoutubeSvg width={25} height={25} fill={'red'} className=""/>
-            <Text className="font-interMedium text-main-grey tracking-base text-base">Connect with Youtube</Text>
-          </View>
-        </TouchableOpacity>
-        <View className="flex flex-row space-x-2 w-full mb-small">
-            <View className="h-[1px] flex-1 bg-tertiary-grey font-interMedium mt-[12px]"></View>
-            <View className="flex flex-row items-center">
-              <Text className="text-secondary-grey text-base">or</Text>
-            </View>
-            <View className="h-[1px] flex-1 bg-tertiary-grey font-interMedium mt-[12px]"></View>
+    <View className="text-base sm:text-lg w-full h-full flex flex-row bg-white text-main-black items-center max-sm:pt-[15%]">
+      <View className="w-full px-[5%] flex justify-center h-auto items-end">
+        <View className="flex flex-row w-full sm:justify-center">
+          <Text className="font-interBold sm:pb-12 max-sm:text-title text-5xl tracking-title">Get Started.</Text>
         </View>
-        <TouchableOpacity className="bg-main-blue w-full px-3 h-[17%] flex justify-center rounded items-center">
-          <Text className="font-interMedium text-white tracking-base text-base">Continue as Guest</Text>
-        </TouchableOpacity>
+        <View className="mt-6 rounded space-y-base w-full">
+          <TouchableOpacity className="rounded w-full min-h-12 space-x-2 h-[15vw] max-h-16 bg-rectangle-grey tracking-base justify-center items-center font-medium flex flex-row text-main-grey">
+            <SpotifySvg className="text-green-400" width={23} height={23} />
+            <Text className="tracking-base text-base text-main-grey font-interMedium">Connect with Spotify</Text>
+          </TouchableOpacity>
+          <TouchableOpacity className="rounded w-full min-h-12 space-x-2 h-[15vw] max-h-16 bg-rectangle-grey tracking-base justify-center items-center font-medium flex flex-row text-main-grey">
+            <YoutubeSvg width={23} height={23} />
+            <Text className="tracking-base text-base text-main-grey font-interMedium">Connect with Youtube</Text>
+          </TouchableOpacity>
+        </View>
+        <View className="w-full flex flex-row items-center space-x-2 mt-small">
+          <View className="flex-1 h-[1px] bg-tertiary-grey mt-[2px]"></View>
+          <Text className="text-base font-interMedium tracking-base text-secondary-grey">or</Text>
+          <View className="flex-1 h-[1px] bg-tertiary-grey mt-[2px]"></View>
+        </View>
+          <TouchableOpacity className="rounded w-full mt-small min-h-12 space-x-2 h-[15vw] max-h-16 bg-main-blue tracking-base justify-center items-center font-medium flex flex-row text-main-grey">
+            <Text className="tracking-base text-base text-white font-interMedium">Connect as Guest</Text>
+          </TouchableOpacity>
       </View>
-
     </View>
   );
 }
